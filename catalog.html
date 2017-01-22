@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotels</title>
+  </head>
+  <body>
+
+    <!-- main header -->
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    <!-- for logo in header -->
+      <div class="logo">
+        <a href="#">
+          <img src="http://placehold.it/50x50" alt="Логотип Седона" width="50"
+        height="50">
+        </a>
+      </div>
+    </header>
+
+    <!-- content -->
+    <main class="container">
+      <section class="hotel-filters">
+        <form class="infrastructure-filter" action="#" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" id="pool" name="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <label for="wi-fi">Wi-fi</label>
+          </fieldset>
+        </form>
+
+        <form class="housing-type-filter" action="#" method="post">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" id="hotel-type" name="hotel-type" checked>
+            <label for="hotel-type">Гостиница</label>
+            <input type="checkbox" id="motel-type" name="motel-type" checked>
+            <label for="motel-type">Мотель</label>
+            <input type="checkbox" id="apartment-type" name="apartment-type" checked>
+            <label for="apartment-type">Апартаменты</label>
+          </fieldset>
+        </form>
+
+        <form class="price-filter" action="#" method="post">
+          <fieldset>
+            <legend>Стоимость в сутки (P):</legend>
+              <label for="min-price">От</label>
+              <input type="text" id="min-price" name="min-price" value="0">
+              <label for="max-price">До</label>
+              <input type="text" id="max-price" name="max-price" value="3000">
+              <input type="range" name="price-range" value="2700" min="0" max="3000">
+              <input type="button" name="btn-to-show" value="Показать">
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="sorting">
+        <div class="sorting-results">
+          <h3>Найдено:3</h3>
+        </div>
+
+        <div class="sorting-conditions">
+          <span>Сортировка:</span>
+          <ul>
+            <li>
+              <a href="#">По цене:</a>
+            </li>
+            <li>
+              <a href="#">По типу:</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу:</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sorting-increase-decrease">
+        </div>
+      </section>
+
+      <section class="suitable-items">
+        <article class="item">
+          <img src="http://placehold.it/100x80" alt="Amara Resort and Spa" width="100"
+            height="80">
+          <h3 class="item-name">Amara Resort & Spa</h3>
+          <span class="item-type">Гостиница</span>
+          <span class="item-price">От 3500 р.</span>
+          <a href="#">Подробнее</a>
+          <form class="btn-to-book" action="#" method="post">
+            <input type="button" name="btn-to-book" value="Забронировать">
+          </form>
+          <span class="item-rating">Рейтинг:8.5</span>
+          <span class="item-stars"></span>
+        </article>
+
+        <article class="item">
+          <img src="http://placehold.it/100x80" alt="Desert Quail Inn" width="100"
+            height="80">
+          <h3 class="item-name">Desert Quail Inn</h3>
+          <span class="item-type">Мотель</span>
+          <span class="item-price">От 2000 р.</span>
+          <a href="#">Подробнее</a>
+          <form class="btn-to-book" action="#" method="post">
+            <input type="button" name="btn-to-book" value="Забронировать">
+          </form>
+          <span class="item-rating">Рейтинг:8.9</span>
+          <span class="item-stars"></span>
+        </article>
+
+        <article class="item">
+          <img src="http://placehold.it/100x80" alt="Villas At Poco Diablo" width="100"
+            height="80">
+          <h3 class="item-name">Villas At Poco Diablo</h3>
+          <span class="item-type">Апартаменты</span>
+          <span class="item-price">От 4000 р.</span>
+          <a href="#">Подробнее</a>
+          <form class="btn-to-book" action="#" method="post">
+            <input type="button" name="btn-to-book" value="Забронировать">
+          </form>
+          <span class="item-rating">Рейтинг:9.2</span>
+          <span class="item-stars"></span>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- main footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-hashtag">
+          <span class="sedona-hashtag">#visitsedona</span>
+        </section>
+
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Ютьюб</a>
+        </section>
+
+        <section class="footer-copyright">
+          <span>Website by</span>
+          <a class="btn" href="https://htmlacademy.ru">
+            <img src="http://placehold.it/100x50" alt="HTML Academy" width="100" height="50">
+          </a>
+        </section>
+
+      </div>
+    </footer>
+  </body>
+</html>
