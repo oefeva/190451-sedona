@@ -1,5 +1,5 @@
 body {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
@@ -7,15 +7,11 @@ body {
 }
 
 h1 {
-  font-family: PT Sans ;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
-  color: #000000;
 }
 
 h2 {
-  font-family: PT Sans ;
   font-size: 30px;
   font-weight: bold;;
   line-height: 24px;
