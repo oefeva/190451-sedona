@@ -1,9 +1,25 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: rgb(209, 209, 209);
+  width: 1280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   color: #000000;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 h1 {
@@ -13,7 +29,164 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-weight: bold;;
+  font-weight: bold;
   line-height: 24px;
   color: #333333;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.container {
+  background-color: rgba(198, 0, 255, 0.2);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: rgba(96, 208, 224, 0.5);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  background-color: rgba(255, 230, 0, 0.48);
+  margin: 0 auto;
+}
+
+.main-nav li {
+  background-color: rgb(178, 197, 249);
+  width: 240px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 20px 70px 20px 70px;
+}
+
+.welcome-sedona {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.slogan {
+  background-color: rgba(170, 82, 165, 0.64);
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.features-blue {
+  width: 1200px;
+}
+
+.features-blue .features-item {
+  background-color: rgb(179, 1, 221);
+  float: left;
+  width: 400px;
+  text-align: center;
+  padding: 55px 60px 55px 60px;
+}
+
+.features-blue .features-image {
+  float: right;
+  width: 800px;
+}
+
+.details {
+  background-color: rgb(41, 140, 67);
+  width: 1200px;
+}
+
+.details-item {
+  text-align: center;
+  float: left;
+  width: 400px;
+  padding: 60px 70px 85px 70px;
+}
+
+.features-blue-2 {
+  width: 1200px;
+}
+
+.features-blue-2 .features-item {
+  background-color: rgb(179, 1, 221);
+  float: right;
+  width: 400px;
+  text-align: center;
+  padding: 55px 60px 55px 60px;
+}
+
+.features-blue-2 .features-image {
+  float: left;
+  width: 800px;
+}
+
+.features .features-grey {
+  width: 1200px;
+}
+
+.features-grey .features-item {
+  background-color: rgba(26, 240, 92, 0.6);
+  width: 400px;
+  float: left;
+  margin: 0 auto;
+  padding: 45px 60px 60px 95px;
+  text-align: center;
+}
+
+.request {
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 1200px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+
+.map {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hotel-search {
+  background-color: rgba(83, 230, 37, 0.65);
+  width: 570px;
+  margin: 5px auto;
+  padding: 55px 60px 55px 60px;
+}
+
+.main-footer {
+  background-color:rgba(59, 30, 213, 0.2);
+  width: 1200px;
+}
+
+
+.main-footer .footer-hashtag {
+  background-color:rgba(207, 1, 183, 0.3);
+  float: left;
+  width: 145px;
+  margin-top: 50px;
+  margin-right: 255px;
+  margin-bottom: 50px;
+  margin-left: 130px;
+}
+
+.main-footer .footer-social {
+  background-color:rgba(207, 1, 183, 0.3);
+  float: left;
+  width: 155px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.main-footer .footer-copyright {
+  background-color:rgba(207, 1, 183, 0.3);
+  float: right;
+  width: 200px;
+  margin-top: 40px;
+  margin-right: 105px;
+  margin-bottom: 40px;
 }
