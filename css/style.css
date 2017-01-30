@@ -218,15 +218,15 @@ p {
 .sorting-results {
   font-size: 21px;
   font-weight: bold;
-  width: 175px;
+  width: 208px;
   padding-left: 73px;
   float: left;
   margin-right: 30px;
 }
 
 .sorting-conditions {
+  width: 364px;
   font-size: 0;
-  padding-left: 30px;
   float: left;
 }
 
