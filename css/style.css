@@ -236,10 +236,6 @@ p {
   float: left;
 }
 
-.sorting-conditions ul {
-  margin-left: 40px;
-}
-
 .sorting-conditions li {
   font-size: 12px;
   background-color: rgb(249, 181, 178);
@@ -276,6 +272,6 @@ p {
 }
 
 .rating-item-block {
-  width: 110px;
+  width: 112px;
   float: right;
 }
