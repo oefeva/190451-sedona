@@ -71,6 +71,11 @@ p {
 }
 
 .welcome-sedona {
+  background-image: url("../img/sedona-main.jpg");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 90px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -144,17 +149,18 @@ p {
 
 .map {
   height: 593px;
+  background-image: url("../img/sedona-maps.jpg");
 }
 
 .hotel-search {
   background-color: rgba(83, 230, 37, 0.65);
   width: 570px;
+  height: 395px;
   padding: 55px 60px 55px 60px;
 }
 
 .main-footer {
   background-color:rgba(59, 30, 213, 0.2);
-  width: 1200px;
 }
 
 .main-footer .footer-hashtag {
