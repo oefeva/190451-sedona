@@ -39,44 +39,66 @@
 
       <!-- content -->
       <main>
-
         <section class="hotel-filters">
-          <form class="name-filter clearfix" action="#" method="get">
-            <fieldset class="infrastructure-filter">
-              <legend>Инфраструктура:</legend>
-              <input type="checkbox" id="pool" name="pool" checked>
-              <label for="pool">Бассейн</label>
-              <input type="checkbox" id="parking" name="parking">
-              <label for="parking">Парковка</label>
-              <input type="checkbox" id="wi-fi" name="wi-fi">
-              <label for="wi-fi">Wi-fi</label>
-            </fieldset>
+          <form class="name-filter" action="#" method="get">
+            <div class="infrastructure-filter">
+              <h3>Инфраструктура:</h3>
+              <div>
+                <input type="checkbox" id="pool" name="pool" checked>
+                <label for="pool">Бассейн</label>
+              </div>
+              <div>
+                <input type="checkbox" id="parking" name="parking">
+                <label for="parking">Парковка</label>
+              </div>
+              <div>
+                <input type="checkbox" id="wi-fi" name="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+              </div>
+            </div>
 
-            <fieldset class="housing-type-filter">
-              <legend>Тип жилья:</legend>
-              <input type="checkbox" id="hotel-type" name="hotel-type" checked>
-              <label for="hotel-type">Гостиница</label>
-              <input type="checkbox" id="motel-type" name="motel-type" checked>
-              <label for="motel-type">Мотель</label>
-              <input type="checkbox" id="apartment-type" name="apartment-type" checked>
-              <label for="apartment-type">Апартаменты</label>
-            </fieldset>
+            <div class="housing-type-filter">
+              <h3>Тип жилья:</h3>
+              <div>
+                <input type="checkbox" id="hotel-type" name="hotel-type" checked>
+                <label for="hotel-type">Гостиница</label>
+              </div>
+              <div>
+                <input type="checkbox" id="motel-type" name="motel-type" checked>
+                <label for="motel-type">Мотель</label>
+              </div>
+              <div>
+                <input type="checkbox" id="apartment-type" name="apartment-type" checked>
+                <label for="apartment-type">Апартаменты</label>
+              </div>
+            </div>
 
-            <fieldset class="price-filter">
-              <legend>Стоимость в сутки (P):</legend>
-                <label for="min-price">От</label>
-                <input type="text" id="min-price" name="min-price" value="0">
-                <label for="max-price">До</label>
-                <input type="text" id="max-price" name="max-price" value="3000">
+            <div class="price-filter">
+              <h3>Стоимость в сутки (P):</h3>
+              <div class="min-max-range">
+                <div>
+                  <label for="min-price">От</label>
+                  <input type="text" id="min-price" name="min-price" value="0">
+                </div>
+                <span>|</span>
+                <div>
+                  <label for="max-price">До</label>
+                  <input type="text" id="max-price" name="max-price" value="3000">
+                </div>
+              </div>
+              <div>
                 <input type="range" name="price-range" value="2700" min="0" max="3000">
+              </div>
+              <div>
                 <input type="submit" name="btn-to-show" value="Показать">
-            </fieldset>
+              </div>
+            </div>
           </form>
         </section>
 
-        <section class="sorting clearfix">
+        <section class="sorting">
           <div class="sorting-results">
-            <b>Найдено:3</b>
+            <b>Найдено: 3</b>
           </div>
 
           <div class="sorting-conditions">
@@ -95,7 +117,10 @@
           </div>
 
           <div class="sorting-increase-decrease">
+            <a class="arrow-up" href="#"></a>
+            <a class="arrow-down" href="#"></a>
           </div>
+
         </section>
 
         <section class="suitable-items">
@@ -113,11 +138,11 @@
             </div>
             <div class="rating-item-block">
               <div class="item-stars"></div>
-              <span class="item-rating">Рейтинг:8.5</span>
+              <span class="item-rating">Рейтинг: 8.5</span>
             </div>
           </article>
 
-          <article class="item clearfix">
+          <article class="item">
             <div class="img-item-block">
               <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135"
               height="90">
@@ -131,7 +156,7 @@
             </div>
             <div class="rating-item-block">
               <div class="item-stars"></div>
-              <span class="item-rating">Рейтинг:8.9</span>
+              <span class="item-rating">Рейтинг: 8.9</span>
             </div>
           </article>
 
@@ -148,7 +173,7 @@
             </div>
             <div class="rating-item-block">
               <div class="item-stars"></div>
-              <span class="item-rating">Рейтинг:9.2</span>
+              <span class="item-rating">Рейтинг: 9.2</span>
             </div>
           </article>
         </section>
@@ -169,7 +194,6 @@
         <div class="footer-copyright">
           <span>Website by</span>
           <a class="btn" href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.png" alt="HTML Academy" width="113" height="39">
           </a>
         </div>
       </footer>
