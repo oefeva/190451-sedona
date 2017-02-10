@@ -841,8 +841,6 @@ body {
 }
 
 
-
-/*demo*/
 .price-filter {
   width: 320px;
   margin-left: auto;
@@ -862,6 +860,7 @@ body {
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
 .price-controls::after {
@@ -879,6 +878,7 @@ body {
   padding-top: 9px;
   padding-bottom: 9px;
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 21px;
   width: 158px;
@@ -898,7 +898,9 @@ body {
   color: inherit;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
   padding-top: 0;
+  padding-left: 3px;
   padding-bottom: 0;
   background: none;
   border: none;
@@ -922,14 +924,18 @@ body {
 
 .range-toggle {
   position: absolute;
-  top: -7px;
-  width: 4px;
-  height: 4px;
+  top: -9px;
+  width: 21px;
+  height: 21px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 .range-toggle-min {
@@ -953,6 +959,7 @@ body {
   text-transform: uppercase;
   background: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
   outline: none;
 }
 
