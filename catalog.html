@@ -74,7 +74,23 @@
             </div>
 
             <div class="price-filter">
-              <h3>Стоимость в сутки (P):</h3>
+              <h3 class="filter-range-title">Стоимость в сутки (р):</h3>
+              <div class="price-controls">
+                <label class="min-price">от<input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до<input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            <!--   <h3>Стоимость в сутки (P):</h3>
               <div class="min-max-range">
                 <div>
                   <label for="min-price">От</label>
@@ -91,7 +107,7 @@
               </div>
               <div>
                 <input type="submit" name="btn-to-show" value="Показать">
-              </div>
+              </div> -->
             </div>
           </form>
         </section>
