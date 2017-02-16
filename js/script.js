@@ -1,5 +1,6 @@
-var openCloseForm = document.querySelector(".request");
+var openCloseForm = document.querySelector(".find-hotel");
 var popUp = document.querySelector(".hotel-search");
+popUp.classList.add("hotel-search-show");
 
 openCloseForm.addEventListener("click", function (event) {
   event.preventDefault();
