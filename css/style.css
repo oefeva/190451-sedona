@@ -48,7 +48,8 @@ img {
     padding-top: 16px;
     padding-bottom: 14px;
     margin-right: 0;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .main-nav li:nth-child(4n+1) {
     text-align: left;
@@ -356,7 +357,9 @@ p.second-feature {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .hotel-search-form label {
     font-size: 14px;
@@ -893,7 +896,6 @@ p.second-feature {
     font-weight: bold;
 }
 .sorting-conditions {
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -901,6 +903,7 @@ p.second-feature {
     width: 857px;
 }
 .sorting-conditions span {
+    display: block;
     font-size: 12px;
     line-height: 18px;
 }
