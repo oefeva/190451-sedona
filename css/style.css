@@ -367,6 +367,7 @@ p.second-feature {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
 }
 .hotel-search-form label {
     font-size: 14px;
@@ -375,6 +376,7 @@ p.second-feature {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    display: block;
 }
 .hotel-search-form input[type="text"] {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -535,7 +537,7 @@ p.second-feature {
     border: none;
     outline: none;
 }
-.hotel-search-form div:last-of-type input[type="submit"] {
+.hotel-search-form input[type="submit"] {
     margin-top: 53px;
     width: 459px;
     height: 58px;
