@@ -43,36 +43,24 @@
     <main>
       <section class="hotel-filters">
         <form class="name-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="infrastructure-filter">
+          <div class="checkbox-filter infrastructure-filter">
             <h3>Инфраструктура:</h3>
-            <div>
               <input type="checkbox" id="pool" name="pool" checked disabled>
               <label class="disabled-title" for="pool">Бассейн</label>
-            </div>
-            <div>
               <input type="checkbox" id="parking" name="parking">
               <label for="parking">Парковка</label>
-            </div>
-            <div>
               <input type="checkbox" id="wi-fi" name="wi-fi">
               <label for="wi-fi">Wi-fi</label>
-            </div>
           </div>
 
-          <div class="housing-type-filter">
+          <div class="checkbox-filter housing-type-filter">
             <h3>Тип жилья:</h3>
-            <div>
               <input type="checkbox" id="hotel-type" name="hotel-type" checked>
               <label for="hotel-type">Гостиница</label>
-            </div>
-            <div>
               <input type="checkbox" id="motel-type" name="motel-type" checked>
               <label for="motel-type">Мотель</label>
-            </div>
-            <div>
               <input type="checkbox" id="apartment-type" name="apartment-type" checked>
               <label for="apartment-type">Апартаменты</label>
-            </div>
           </div>
 
           <div class="price-filter">
@@ -106,13 +94,13 @@
         <div class="sorting-conditions">
           <span>Сортировка:</span>
           <ul>
-            <li>
+            <li class="condition">
               <a class="active">По цене</a>
             </li>
-            <li>
+            <li class="condition">
               <a href="#">По типу</a>
             </li>
-            <li>
+            <li class="condition">
               <a href="#">По рейтингу</a>
             </li>
           </ul>
@@ -131,7 +119,7 @@
             <img src="img/hotel-1.jpg" alt="Amara Resort and Spa" width="135" height="90">
           </div>
           <div class="description-item-block">
-            <h1 class="item-name"><a href="#">Amara Resort & Spa</a></h1>
+            <h1><a class="item-name" href="#">Amara Resort & Spa</a></h1>
             <span class="item-type">Гостиница</span>
             <span class="item-price">От 4000 р.</span>
             <a class="to-get-more" href="#">Подробнее</a>
@@ -148,7 +136,7 @@
             <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">
           </div>
           <div class="description-item-block">
-            <h1 class="item-name"><a href="#">Desert Quail Inn</a></h1>
+            <h1><a class="item-name" href="#">Desert Quail Inn</a></h1>
             <span class="item-type">Мотель</span>
             <span class="item-price">От 3000 р.</span>
             <a class="to-get-more" href="#">Подробнее</a>
@@ -165,7 +153,7 @@
             <img src="img/hotel-3.jpg" alt="Villas At Poco Diablo" width="135" height="90">
           </div>
           <div class="description-item-block">
-            <h1 class="item-name"><a href="#">Villas At Poco Diablo</a></h1>
+            <h1><a class="item-name" href="#">Villas At Poco Diablo</a></h1>
             <span class="item-type">Апартаменты</span>
             <span class="item-price">От 2000 р.</span>
             <a class="to-get-more" href="#">Подробнее</a>
