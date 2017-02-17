@@ -22,6 +22,10 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 /* index.html styles */
 .main-header {
     background-color: #ffffff;
@@ -140,6 +144,7 @@ body {
     text-align: center;
 }
 .features-item b {
+    display: block;
     padding-right: 125px;
     padding-left: 125px;
     font-size: 21px;
@@ -148,6 +153,7 @@ body {
     margin-bottom: 21px;
 }
 .features-item span {
+    display: block;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 20px;
@@ -175,16 +181,6 @@ p.second-feature {
 }
 .details-item {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     text-align: center;
     width: 400px;
     padding-top: 163px;
@@ -228,20 +224,20 @@ p.second-feature {
     font-size: 21px;
     line-height: 21px;
 }
-.details-item b:first-child {
+.details-item:first-of-type b {
     padding-left: 165px;
     padding-right: 165px;
 }
-.details-item b:nth-child(2) {
+.details-item:nth-of-type(2) b {
     padding-left: 180px;
     padding-right: 180px;
 }
-.details-item b:last-child {
+.details-item:last-of-type b {
     padding-left: 150px;
     padding-right: 150px;
 }
 .details-item p {
-    margin-top: 24px;
+    margin-top: 20px;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 21px;
@@ -560,7 +556,6 @@ p.second-feature {
     background-color: #5496bd;
 }
 /* footer */
-
 .main-footer {
     background-color: rgba(255, 255, 255, 0.9);
     display: -webkit-box;
@@ -576,7 +571,7 @@ p.second-feature {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    padding-top: 48px;
+    padding-top: 47px;
     padding-bottom: 45px;
     padding-left: 132px;
 }
@@ -594,10 +589,11 @@ p.second-feature {
     align-items: center;
     width: 400px;
     padding-left: 124px;
-    padding-top: 37px;
+    padding-top: 36px;
     padding-bottom: 40px;
 }
 .social-btn {
+    display: block;
     position: relative;
     margin-right: 6px;
     font-size: 0;
@@ -671,7 +667,7 @@ p.second-feature {
     display: -ms-flexbox;
     display: flex;
     width: 400px;
-    padding-top: 42px;
+    padding-top: 41px;
     padding-left: 102px;
     padding-bottom: 40px;
 }
@@ -716,7 +712,7 @@ p.second-feature {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 30px 71px 26px;
+    padding: 28px 71px 28px;
 }
 .name-filter h3 {
     margin-top: 0;
@@ -768,20 +764,18 @@ p.second-feature {
     width: 22px;
     height: 22px;
     background-position: -10px -52px;
-    opacity: 1;
 }
 .infrastructure-filter input[type="checkbox"]:checked + label::before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     width: 26px;
     height: 22px;
     background-position: -136px -52px;
-    opacity: 1;
 }
 .infrastructure-filter input[type="checkbox"]:disabled + label::before {
     content: "";
@@ -896,7 +890,7 @@ p.second-feature {
     text-transform: uppercase;
 }
 .filter-range-title {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -1006,9 +1000,10 @@ p.second-feature {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 18px;
     padding-left: 72px;
+    border-bottom: 1px solid #e5e5e5;
 }
 .sorting-results {
     width: 164px;
@@ -1035,7 +1030,7 @@ p.second-feature {
 }
 .sorting-conditions ul li {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 32px;
     font-size: 12px;
     line-height: 18px;
     text-decoration: none;
@@ -1062,7 +1057,7 @@ p.second-feature {
 }
 .sorting-increase-decrease {
     position: relative;
-    margin-top: 5px;
+    margin-top: 7px;
     width: 107px;
     margin-left: auto;
 }
@@ -1124,25 +1119,32 @@ p.second-feature {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 29px 72px 21px;
-    border-top: 1px solid #e5e5e5;
+    padding-right: 72px;
+    padding-left: 72px;
     border-bottom: 1px solid #e5e5e5;
+}
+.item:first-child {
+  padding-top: 29px;
+  padding-bottom: 21px;
+}
+.item:nth-child(2) {
+  padding-top: 30px;
+  padding-bottom: 21px;
+}
+.item:last-child {
+  padding-top: 30px;
+  padding-bottom: 21px;
 }
 .img-item-block {
     width: 135px;
     margin-right: 30px;
 }
 .description-item-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 260px;
+    width: 280px;
 }
 .description-item-block h1 {
-    margin-top: -3px;
-    margin-bottom: 0;
+    margin-top: -4px;
+    margin-bottom: 4px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -1158,20 +1160,25 @@ p.second-feature {
     color: #cacaca;
 }
 .description-item-block span {
-    width: 110px;
+    display: inline-block;
     font-size: 14px;
     line-height: 21px;
     margin-top: -3px;
-    margin-bottom: 0;
+    margin-bottom: 14px;
 }
 .description-item-block span:first-of-type {
-    margin-right: 6px;
+    width: 110px;
+    margin-right: 2px;
+}
+.description-item-block span:last-of-type {
+  width: 142px;
 }
 .description-item-block .to-get-more {
+    display: inline-block;
     width: 110px;
     height: 27px;
     padding-top: 3px;
-    margin-right: 6px;
+    margin-right: 2px;
     background-color: #81b3d2;
     text-align: center;
     font-size: 14px;
@@ -1189,6 +1196,7 @@ p.second-feature {
     color: #8db5d0;
 }
 .description-item-block .to-book {
+    display: inline-block;
     width: 142px;
     height: 27px;
     padding-top: 3px;
@@ -1262,6 +1270,7 @@ p.second-feature {
     background-position: -143px -226px;
 }
 .rating-item-block .item-rating {
+    display: block;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 14px;
